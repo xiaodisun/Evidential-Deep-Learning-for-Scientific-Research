@@ -126,7 +126,7 @@
 | 物理 | MD17 | [eIP][eip] | — | — | — | — | — | 0.155±0.008 |
 | 物理 | ENGIE Renewables | [PINN+EDL][pinnedl] | — | — | — | — | 27.94 | 15.375 |
 | 化学 | Rad-6-RE | [Proposed][proposed3] | — | — | — | 0.352 | 0.208±0.006 | — |
-| 化学 | Ea-RMG | [Proposed][proposed3] | — | — | 0.228 | 21.223±3.252 | — |
+| 化学 | Ea-RMG | [Proposed][proposed3] | — | — | — | 0.228 | 21.223±3.252 | — |
 | 化学 | CYP3A4 | [Proposed][proposed4] | — | — | — | — | 0.483 | — |
 | 地球与环境<br>科学 | University of Pavia | [SSEL][ssel] | — | 95.25 | — | — | — | — |
 | 地球与环境<br>科学 | University of Pavia | [HyperEDL][hyperedl] | — | 84.46 | — | — | — | — |
