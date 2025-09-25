@@ -128,14 +128,14 @@
 | 化学 | Rad-6-RE | [Proposed][proposed3] | — | — | — | 0.352 | 0.208±0.006 | — |
 | 化学 | Ea-RMG | [Proposed][proposed3] | — | — | — | 0.228 | 21.223±3.252 | — |
 | 化学 | CYP3A4 | [Proposed][proposed4] | — | — | — | — | 0.483 | — |
-| 地球与环境<br>科学 | University of Pavia | [SSEL][ssel] | — | 95.25 | — | — | — | — |
-| 地球与环境<br>科学 | University of Pavia | [HyperEDL][hyperedl] | — | 84.46 | — | — | — | — |
-| 地球与环境<br>科学 | University of Pavia | [EGCN-UR-TV][egcn] | — | — | 78.83±0.85 | — | — | — |
-| 地球与环境<br>科学 | University of Pavia | [SDES][sdes] | — | 66.8 | — | — | — | — |
-| 地球与环境<br>科学 | Houston | [HyperEDL][hyperedl] | — | 83.25 | — | — | — | — |
-| 地球与环境<br>科学 | Houston | [EGCN-UR-TV][egcn] | — | — | 87.96±0.69 | — | — | — |
-| 地球与环境<br>科学 | HyRANK | [SDES][sdes] | — | 50.9 | — | — | — | — |
-| 地球与环境<br>科学 | HyRANK | [HyperEDL][hyperedl] | — | 64.45 | — | — | — | — |
+| 地球 | University of Pavia | [SSEL][ssel] | — | 95.25 | — | — | — | — |
+| 地球 | University of Pavia | [HyperEDL][hyperedl] | — | 84.46 | — | — | — | — |
+| 地球 | University of Pavia | [EGCN-UR-TV][egcn] | — | — | 78.83±0.85 | — | — | — |
+| 地球 | University of Pavia | [SDES][sdes] | — | 66.8 | — | — | — | — |
+| 地球 | Houston | [HyperEDL][hyperedl] | — | 83.25 | — | — | — | — |
+| 地球 | Houston | [EGCN-UR-TV][egcn] | — | — | 87.96±0.69 | — | — | — |
+| 地球 | HyRANK | [SDES][sdes] | — | 50.9 | — | — | — | — |
+| 地球 | HyRANK | [HyperEDL][hyperedl] | — | 64.45 | — | — | — | — |
 
 <!-- 引用式链接 -->
 [fcnn]: https://discovery.ucl.ac.uk/id/eprint/10152256/1/Personalized_Blood_Glucose_Prediction_for_Type_1_Diabetes_Using_Evidential_Deep_Learning_and_Meta-Learning.pdf
