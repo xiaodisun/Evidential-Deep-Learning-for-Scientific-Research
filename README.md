@@ -13,6 +13,7 @@
 - [物理学领域](#物理学领域)
 - [化学领域](#化学领域)
 - [地球与环境科学领域](#地球与环境科学领域)
+- [部分实验结果](#部分实验结果)
 
 ---
 
@@ -112,10 +113,52 @@
 
 
 
+## 部分实验结果
+
+| 领域 | 数据集 | 方法 | Dice | Acc | AUC | ECE | RMSE | MAE |
+|:--|:--|:--|:--:|:--:|:--:|:--:|:--:|:--:|
+| 医学 | OhioT1DM | [FCNN][fcnn] | — | — | — | — | 31.07±3.62 | 22.86±2.89 |
+| 医学 | OhioT1DM | [E3NN][e3nn] | — | — | — | — | 32.54±3.61 | 24.05±2.94 |
+| 医学 | MitoEM-H | [EUMS-3D][eums3d] | 0.845 | — | — | — | — | — |
+| 医学 | Gd-EOB-DTPA | [Proposed][proposed1] | — | 85.5±1.91 | 89.0±0.03 | 0.154±0.028 | — | — |
+| 医学 | REFUGE | [UML][uml] | 0.858 | 0.853 | — | — | — | — |
+| 物理 | Top Tagging | [Proposed][proposed2] | — | 0.937 | 0.904 | — | — | — |
+| 物理 | MD17 | [eIP][eip] | — | — | — | — | — | 0.155±0.008 |
+| 物理 | ENGIE Renewables | [PINN+EDL][pinnedl] | — | — | — | — | 27.94 | 15.375 |
+| 化学 | Rad-6-RE | [Proposed][proposed3] | — | — | — | 0.352 | 0.208±0.006 | — |
+| 化学 | Ea-RMG | [Proposed][proposed3] | — | — | 0.228 | 21.223±3.252 | — |
+| 化学 | CYP3A4 | [Proposed][proposed4] | — | — | — | — | 0.483 | — |
+| 地球与环境<br>科学 | University of Pavia | [SSEL][ssel] | — | 95.25 | — | — | — | — |
+| 地球与环境<br>科学 | University of Pavia | [HyperEDL][hyperedl] | — | 84.46 | — | — | — | — |
+| 地球与环境<br>科学 | University of Pavia | [EGCN-UR-TV][egcn] | — | — | 78.83±0.85 | — | — | — |
+| 地球与环境<br>科学 | University of Pavia | [SDES][sdes] | — | 66.8 | — | — | — | — |
+| 地球与环境<br>科学 | Houston | [HyperEDL][hyperedl] | — | 83.25 | — | — | — | — |
+| 地球与环境<br>科学 | Houston | [EGCN-UR-TV][egcn] | — | — | 87.96±0.69 | — | — | — |
+| 地球与环境<br>科学 | HyRANK | [SDES][sdes] | — | 50.9 | — | — | — | — |
+| 地球与环境<br>科学 | HyRANK | [HyperEDL][hyperedl] | — | 64.45 | — | — | — | — |
+
+<!-- 引用式链接 -->
+[fcnn]: https://discovery.ucl.ac.uk/id/eprint/10152256/1/Personalized_Blood_Glucose_Prediction_for_Type_1_Diabetes_Using_Evidential_Deep_Learning_and_Meta-Learning.pdf
+[e3nn]: https://discovery.ucl.ac.uk/id/eprint/10143535/1/IoMT-Enabled_Real-time_Blood_Glucose_Prediction_with_Deep_Learning_and_Edge_Computing.pdf
+[eums3d]: https://arxiv.org/pdf/2311.06400
+[proposed1]: https://arxiv.org/pdf/2306.12054
+[uml]: https://arxiv.org/pdf/2303.10049
+[proposed2]: https://iopscience.iop.org/article/10.1088/2632-2153/ade51b/pdf
+[eip]: https://arxiv.org/pdf/2407.13994
+[pinnedl]: https://arxiv.org/pdf/2307.14675
+[proposed3]: https://pubs.acs.org/doi/pdf/10.1021/acs.jcim.4c01358?ref=article_openPDF
+[proposed4]: https://pubs.acs.org/doi/pdf/10.1021/acs.jcim.3c01241?ref=article_openPDF
+[ssel]: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10379821
+[hyperedl]: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10916756
+[egcn]: https://openreview.net/pdf?id=8dN7gApKm3
+[sdes]: https://www.arxiv.org/pdf/2506.09460
+
+
+
 
 ##反馈
 如果您有任何的建议或发现遗漏的文章，请及时和我联系
 
-- [e-mail](2043205000071@ynnu.edu.cn)
+- [e-mail](xiaodisun41@gmail.com)
 - [pull request](https://github.com/xiaodisun/Evidential-Deep-Learning-for-Scientific-Research-Methods-Applications-and-Development-Trends/pulls)
 
