@@ -201,15 +201,15 @@
 | 医学 | OhioT1DM | [FCNN](https://discovery.ucl.ac.uk/id/eprint/10152256/1/Personalized_Blood_Glucose_Prediction_for_Type_1_Diabetes_Using_Evidential_Deep_Learning_and_Meta-Learning.pdf) | - | - | - | 31.07±3.62 | 22.86±2.89 | - |
 | 医学 | OhioT1DM | [E3NN](https://discovery.ucl.ac.uk/id/eprint/10143535/1/IoMT-Enabled_Real-time_Blood_Glucose_Prediction_with_Deep_Learning_and_Edge_Computing.pdf) | - | - | - | 32.54±3.61 | 24.05±2.94 | - |
 | 物理 | Top Tagging | [Proposed](https://iopscience.iop.org/article/10.1088/2632-2153/ade51b/pdf) | 93.7 | 90.4 | - | - | - | - |
-| 物理 | JetNet | - | 79.0 | 82.2 | - | - | - | - |
-| 物理 | JetClass | - | 77.6 | 84.7 | - | - | - | - |
+| 物理 | JetNet | [Proposed](https://iopscience.iop.org/article/10.1088/2632-2153/ade51b/pdf) | 79.0 | 82.2 | - | - | - | - |
+| 物理 | JetClass | [Proposed](https://iopscience.iop.org/article/10.1088/2632-2153/ade51b/pdf) | 77.6 | 84.7 | - | - | - | - |
 | 物理 | Small Molecule | [eIP](https://www.nature.com/articles/s41467-025-67663-y_reference.pdf) | - | - | - | - | 0.155±0.008 | - |
-| 物理 | Water | - | - | - | - | - | 0.082±0.039 | - |
+| 物理 | Water | [eIP](https://www.nature.com/articles/s41467-025-67663-y_reference.pdf) | - | - | - | - | 0.082±0.039 | - |
 | 物理 | ENGIE Renewables | [PINN+EDL](https://arxiv.org/pdf/2307.14675) | - | - | - | 27.94 | 15.375 | - |
 | 化学 | QM9 | [Proposed](https://pubs.acs.org/doi/pdf/10.1021/acscentsci.1c00546) | - | - | - | 0.26±0.01 | 0.0112±0.0003 | - |
 | 化学 | Rad-6-RE | [Proposed](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.4c01358) | - | - | - | 0.208±0.006 | - | 0.352 |
-| 化学 | Ea-RMG | - | - | - | - | 21.223±3.252 | - | 0.228 |
-| 化学 | Ea-CCSD | - | - | - | - | 7.325±0.340 | - | 0.251 |
+| 化学 | Ea-RMG | [Proposed](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.4c01358) | - | - | - | 21.223±3.252 | - | 0.228 |
+| 化学 | Ea-CCSD | [Proposed](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.4c01358) | - | - | - | 7.325±0.340 | - | 0.251 |
 | 化学 | CYP3A4 | [Proposed](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.3c01241) | - | - | - | 0.385 | - | - |
 | 地球与环境科学 | University of Pavia | [SSEL](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10379821) | 95.25 | - | - | - | - | - |
 | 地球与环境科学 | University of Pavia | [HyperEDL](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10916756) | 84.46 | - | - | - | - | - |
