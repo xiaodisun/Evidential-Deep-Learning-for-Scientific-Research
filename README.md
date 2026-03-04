@@ -1,6 +1,5 @@
-# Evidential Deep Learning for Scientific Research: Methods, Applications and Development Trends
-
-面向科学研究的证据深度学习：方法、应用与发展趋势相关的文献清单。  
+# Evidential Deep Learning: Theory, Methods, and Applications in Scientific Domains
+证据深度学习：理论、方法与科学领域应用相关的文献清单。  
 该存储库旨在帮助研究人员和爱好者探索证据深度学习在科学领域的最新进展和主流发展。  
 欢迎随时联系并分享 EDL 领域的最新相关工作，以帮助进一步丰富这个存储库。
 
