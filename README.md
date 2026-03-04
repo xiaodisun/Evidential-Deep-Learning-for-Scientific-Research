@@ -13,7 +13,7 @@
 - [物理学领域](#物理学领域)
 - [化学领域](#化学领域)
 - [地球与环境科学领域](#地球与环境科学领域)
-- [部分实验结果](#部分实验结果)
+- [实验结果](#实验结果)
 
 ---
 
@@ -38,14 +38,14 @@
 ### 复合类别的Dirichlet证据获取
 
 | ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
-|:---:|:---:|:---:|:---|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 |  1  | 2024 | arXiv | Hyper evidential deep learning to quantify composite classification uncertainty | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2404.10980) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/Hugo101/HyperEvidentialNN) |
 |  2  | 2024 | NeurIPS | Hyper-opinion evidential deep learning for out-of-distribution detection | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.neurips.cc/paper_files/paper/2024/file/99d4ceebdf75b64e8ed608a245b63416-Paper-Conference.pdf) | - |
 
 ### 正则化Dirichlet证据
 
 | ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
-|:---:|:---:|:---:|:---|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 |  3  | 2023 | ICML | Learn to accumulate evidence from all training samples: theory and practice | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.mlr.press/v202/pandey23a/pandey23a.pdf) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/pandeydeep9/EvidentialResearch2023) |
 |  4  | 2024 | AAAI | Uncertainty regularized evidential regression | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://doi.org/10.1609/aaai.v38i15.29583) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/FlynnYe/UR-ERN?tab=readme-ov-file) |
 |  5  | 2024 | AAAI | The evidence contraction issue in deep evidential regression: Discussion and solution | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://ojs.aaai.org/index.php/AAAI/article/view/30172) | - |
@@ -53,7 +53,7 @@
 ### 贝叶斯角下的证据获取
 
 | ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
-|:---:|:---:|:---:|:---|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 |  6  | 2023 | arXiv | Deep evidential learning for Bayesian quantile regression | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2308.10650) | - |
 |  7  | 2024 | DAC | Conformal inference meets evidential learning: Distribution-free uncertainty quantification with epistemic and aleatoric separability | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://dl.acm.org/doi/pdf/10.1145/3649329.3663512) | - |
 |  8  | 2024 | UAI | Beyond Dirichlet-based models: When Bayesian neural networks meet evidential deep learning | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://openreview.net/pdf?id=2Eh7gLpIyG) | - |
@@ -61,7 +61,7 @@
 ### 自适应重加权证据
 
 | ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
-|:---:|:---:|:---:|:---|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 |  9  | 2023 | ICML | Uncertainty estimation by Fisher information-based evidential deep learning | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.mlr.press/v202/deng23b/deng23b.pdf) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/danruod/IEDL) |
 
 ---
@@ -71,28 +71,28 @@
 ### 无标签训练
 
 | ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
-|:---:|:---:|:---:|:---|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 | 10  | 2024 | IEEE BIBM | Mutual evidential deep learning for semi-supervised medical image segmentation | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://ieeexplore.ieee.org/abstract/document/10822008) | - |
 | 11  | 2023 | arXiv | Adaptive negative evidential deep learning for open-set semi-supervised learning | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2303.12091) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/yuyang16101066/anedl) |
 
 ### 类别不平衡的训练
 
 | ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
-|:---:|:---:|:---:|:---|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 | 12  | 2022 | NeurIPS | Hybrid-EDL: Improving evidential deep learning for uncertainty quantification on imbalanced data | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://openreview.net/pdf?id=Nr1RDmAx-Qm) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/XTxiatong/Hybrid-EDL.git) |
 | 13  | 2024 | IEEE JBHI | Uncertainty-aware health diagnostics via class-balanced evidential deep learning | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://ieeexplore.ieee.org/abstract/document/10423104) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/XTxiatong/Class-balanced-EDL.git) |
 
 ### 元学习的训练
 
 | ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
-|:---:|:---:|:---:|:---|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 | 14  | 2025 | Expert Syst. Appl. | Meta transfer evidence deep learning for trustworthy few-shot classification | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://www.sciencedirect.com/science/article/pii/S0957417424022383) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/ljatynu/MetaTEDL) |
 | 15  | 2025 | arXiv | Bi-level meta-policy control for dynamic uncertainty calibration in evidential deep learning | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2510.08938) | - |
 
 ### 分布外样本检测
 
 | ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
-|:---:|:---:|:---:|:---|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 | 16  | 2025 | Expert Syst. Appl. | CEDL+: Exploiting evidential deep learning for continual out-of-distribution detection | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://www.sciencedirect.com/science/article/pii/S095741742501396X) | - |
 | 17  | 2025 | arXiv | Quantifying adversarial uncertainty in evidential deep learning using conflict resolution | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2506.05937) | - |
 | 18  | 2024 | arXiv | Uncertainty Estimation by Density Aware Evidential Deep Learning | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2409.08754) | - |
@@ -105,7 +105,7 @@
 ### 不确定性估计方法
 
 | ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
-|:---:|:---:|:---:|:---|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|
 | 20  | 2016 | ICML | Dropout as a Bayesian approximation: Representing model uncertainty in deep learning | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.mlr.press/v48/gal16.pdf) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/LeaBresson/Dropout-as-a-Bayesian-Approximation) |
 | 21  | 2018 | ICLR | A scalable Laplace approximation for neural networks | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://openreview.net/pdf?id=Skdvd2xAZ) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/ImperialCollegeLondon/csml-reading-group/issues/7) |
 | 22  | 2021 | JASA | Stochastic gradient Markov chain Monte Carlo | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://www.tandfonline.com/doi/pdf/10.1080/01621459.2020.1847120) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/chris-nemeth/sgmcmc-review-paper) |
@@ -190,47 +190,52 @@
 | 10  | 2024 |          arXiv           | Evidential Deep Learning for Probabilistic Modelling of Extreme Storm Events                                                             |    自然灾害预测         | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2412.14048)                                   | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/SULI24/edl-stormcast/) |
 | 11  | 2025 | Neural Comput. Appl.      | Evidential uncertainty quantification with multiple deep learning architectures for spatiotemporal drought forecasting                  |    自然灾害预测         | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://link.springer.com/article/10.1007/s00521-025-11026-7)       | -                                               |
 
+## 实验结果
+## 不同领域与数据规模下证据深度学习方法的性能对比
 
+| 领域 | 数据集 | 方法 | Acc | Auc | DSC | RMSE | MAE | ECE |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| 医学 | Gd-EOB-DTPA | [Proposed](https://arxiv.org/pdf/2306.12054) | 85.5±1.91 | 89.0±0.03 | - | - | - | 0.154±0.028 |
+| 医学 | KIBA | [EviDTI](https://www.nature.com/articles/s41467-025-62235-6.pdf) | 91.27±0.07 | 93.57±0.35 | - | - | - | - |
+| 医学 | MitoEM-H | [EUMS-3D](https://ojs.aaai.org/index.php/AAAI/article/view/28287) | - | - | 84.5 | - | - | - |
+| 医学 | ACDC | [MEDL](https://arxiv.org/pdf/2505.12418) | - | - | 90.95 | - | - | - |
+| 医学 | OhioT1DM | [FCNN](https://discovery.ucl.ac.uk/id/eprint/10152256/1/Personalized_Blood_Glucose_Prediction_for_Type_1_Diabetes_Using_Evidential_Deep_Learning_and_Meta-Learning.pdf) | - | - | - | 31.07±3.62 | 22.86±2.89 | - |
+| 医学 | OhioT1DM | [E3NN](https://discovery.ucl.ac.uk/id/eprint/10143535/1/IoMT-Enabled_Real-time_Blood_Glucose_Prediction_with_Deep_Learning_and_Edge_Computing.pdf) | - | - | - | 32.54±3.61 | 24.05±2.94 | - |
+| 物理 | Top Tagging | [Proposed](https://iopscience.iop.org/article/10.1088/2632-2153/ade51b/pdf) | 93.7 | 90.4 | - | - | - | - |
+| 物理 | JetNet | - | 79.0 | 82.2 | - | - | - | - |
+| 物理 | JetClass | - | 77.6 | 84.7 | - | - | - | - |
+| 物理 | Small Molecule | [eIP](https://www.nature.com/articles/s41467-025-67663-y_reference.pdf) | - | - | - | - | 0.155±0.008 | - |
+| 物理 | Water | - | - | - | - | - | 0.082±0.039 | - |
+| 物理 | ENGIE Renewables | [PINN+EDL](https://arxiv.org/pdf/2307.14675) | - | - | - | 27.94 | 15.375 | - |
+| 化学 | QM9 | [Proposed](https://pubs.acs.org/doi/pdf/10.1021/acscentsci.1c00546) | - | - | - | 0.26±0.01 | 0.0112±0.0003 | - |
+| 化学 | Rad-6-RE | [Proposed](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.4c01358) | - | - | - | 0.208±0.006 | - | 0.352 |
+| 化学 | Ea-RMG | - | - | - | - | 21.223±3.252 | - | 0.228 |
+| 化学 | Ea-CCSD | - | - | - | - | 7.325±0.340 | - | 0.251 |
+| 化学 | CYP3A4 | [Proposed](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.3c01241) | - | - | - | 0.385 | - | - |
+| 地球与环境科学 | University of Pavia | [SSEL](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10379821) | 95.25 | - | - | - | - | - |
+| 地球与环境科学 | University of Pavia | [HyperEDL](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10916756) | 84.46 | - | - | - | - | - |
+| 地球与环境科学 | University of Pavia | [EGCN-UR-TV](https://openreview.net/pdf?id=8dN7gApKm3) | - | 78.83±0.85 | - | - | - | - |
+| 地球与环境科学 | University of Pavia | [Proposed](https://arxiv.org/pdf/2506.09460?) | 77.38 | - | - | - | - | - |
+| 地球与环境科学 | Houston | [HyperEDL](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10916756) | 83.25 | - | - | - | - | - |
+| 地球与环境科学 | Houston | [EGCN-UR-TV](https://openreview.net/pdf?id=8dN7gApKm3) | - | 87.96±0.69 | - | - | - | - |
+| 地球与环境科学 | Houston | [Proposed](https://arxiv.org/pdf/2506.09460?) | 57.97 | - | - | - | - | - |
+| 地球与环境科学 | HyRANK | [HyperEDL](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10916756) | 64.45 | - | - | - | - | - |
 
-## 部分实验结果
+## 常用基线方法在多数据集上的分类准确率与在不同ID→OOD分布外检测设置下的AUPR对比
 
-| 领域 | 数据集 | 方法 | Dice | Acc | AUC | ECE | RMSE | MAE |
-|:--|:--|:--|:--:|:--:|:--:|:--:|:--:|:--:|
-| 医学 | OhioT1DM | [FCNN][fcnn] | — | — | — | — | 31.07±3.62 | 22.86±2.89 |
-| 医学 | OhioT1DM | [E3NN][e3nn] | — | — | — | — | 32.54±3.61 | 24.05±2.94 |
-| 医学 | MitoEM-H | [EUMS-3D][eums3d] | 0.845 | — | — | — | — | — |
-| 医学 | Gd-EOB-DTPA | [Proposed][proposed1] | — | 85.5±1.91 | 89.0±0.03 | 0.154±0.028 | — | — |
-| 医学 | REFUGE | [UML][uml] | 0.858 | 0.853 | — | — | — | — |
-| 物理 | Top Tagging | [Proposed][proposed2] | — | 0.937 | 0.904 | — | — | — |
-| 物理 | MD17 | [eIP][eip] | — | — | — | — | — | 0.155±0.008 |
-| 物理 | ENGIE Renewables | [PINN+EDL][pinnedl] | — | — | — | — | 27.94 | 15.375 |
-| 化学 | Rad-6-RE | [Proposed][proposed3] | — | — | — | 0.352 | 0.208±0.006 | — |
-| 化学 | Ea-RMG | [Proposed][proposed3] | — | — | — | 0.228 | 21.223±3.252 | — |
-| 化学 | CYP3A4 | [Proposed][proposed4] | — | — | — | — | 0.483 | — |
-| 地球 | University of Pavia | [SSEL][ssel] | — | 95.25 | — | — | — | — |
-| 地球 | University of Pavia | [HyperEDL][hyperedl] | — | 84.46 | — | — | — | — |
-| 地球 | University of Pavia | [EGCN-UR-TV][egcn] | — | — | 78.83±0.85 | — | — | — |
-| 地球 | University of Pavia | [SDES][sdes] | — | 66.8 | — | — | — | — |
-| 地球 | Houston | [HyperEDL][hyperedl] | — | 83.25 | — | — | — | — |
-| 地球 | Houston | [EGCN-UR-TV][egcn] | — | — | 87.96±0.69 | — | — | — |
-| 地球 | HyRANK | [SDES][sdes] | — | 50.9 | — | — | — | — |
-| 地球 | HyRANK | [HyperEDL][hyperedl] | — | 64.45 | — | — | — | — |
-
-<!-- 引用式链接 -->
-[fcnn]: https://discovery.ucl.ac.uk/id/eprint/10152256/1/Personalized_Blood_Glucose_Prediction_for_Type_1_Diabetes_Using_Evidential_Deep_Learning_and_Meta-Learning.pdf
-[e3nn]: https://discovery.ucl.ac.uk/id/eprint/10143535/1/IoMT-Enabled_Real-time_Blood_Glucose_Prediction_with_Deep_Learning_and_Edge_Computing.pdf
-[eums3d]: https://arxiv.org/pdf/2311.06400
-[proposed1]: https://arxiv.org/pdf/2306.12054
-[uml]: https://arxiv.org/pdf/2303.10049
-[proposed2]: https://iopscience.iop.org/article/10.1088/2632-2153/ade51b/pdf
-[eip]: https://arxiv.org/pdf/2407.13994
-[pinnedl]: https://arxiv.org/pdf/2307.14675
-[proposed3]: https://pubs.acs.org/doi/pdf/10.1021/acs.jcim.4c01358?ref=article_openPDF
-[proposed4]: https://pubs.acs.org/doi/pdf/10.1021/acs.jcim.3c01241?ref=article_openPDF
-[ssel]: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10379821
-[hyperedl]: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10916756
-[egcn]: https://openreview.net/pdf?id=8dN7gApKm3
-[sdes]: https://www.arxiv.org/pdf/2506.09460
+| 方法 | CIFAR10 | CIFAR100 | MNIST | CIFAR10→SVHN | CIFAR10→CIFAR100 | CIFAR10→Place365 | MNIST→KMNIST | MNIST→FMNIST |
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| EDL | 88.48 | 71.40 | 99.30 | 82.32 | 87.13 | 70.46 | 96.31 | 98.08 |
+| RED | 89.43 | 76.43 | 99.10 | 82.85 | 87.84 | 70.78 | - | - |
+| I-EDL | 88.38 | 66.38 | 99.21 | 84.97 | 86.31 | 68.92 | 98.33 | 98.86 |
+| Re-EDL | 90.13 | 63.53 | 99.35 | 89.94 | 88.31 | 71.97 | 99.03 | 99.65 |
+| F-EDL | 91.19 | 69.40 | - | 91.20 | 88.37 | - | - | - |
+| DAEDL | 91.11 | 66.01 | - | 85.54 | 88.19 | - | 99.90 | 99.83 |
+| HEDL | 95.66 | 80.40 | - | 94.09 | - | 90.14 | - | - |
+| PostNet | 87.82 | - | 99.29 | 83.76 | 87.07 | 71.79 | 94.62 | 97.28 |
+| DUQ | 89.39 | - | 98.65 | 81.44 | 85.38 | 66.20 | 98.52 | 97.92 |
+| MC Dropout | 90.16 | 75.83 | 99.50 | 78.40 | 85.39 | 67.63 | 98.09 | 98.73 |
+| Deep Ensemble | 92.55 | - | 99.30 | 84.77 | 89.15 | 73.89 | - | - |
 
 
 
