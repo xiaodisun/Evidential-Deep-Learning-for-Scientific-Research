@@ -17,24 +17,103 @@
 
 ---
 
-
-
 ## 研究进展
+- [证据获取机制](#证据获取机制)
+  - [复合类别的Dirichlet证据获取](#复合类别的dirichlet证据获取)
+  - [正则化Dirichlet证据](#正则化dirichlet证据)
+  - [贝叶斯角下的证据获取](#贝叶斯角下的证据获取)
+  - [自适应重加权证据](#自适应重加权证据)
+- [训练与推理策略](#训练与推理策略)
+  - [无标签训练](#无标签训练)
+  - [类别不平衡的训练](#类别不平衡的训练)
+  - [元学习的训练](#元学习的训练)
+  - [分布外样本检测](#分布外样本检测)
+- [不确定性建模与估计方法](#不确定性建模与估计方法)
+  - [不确定性估计方法](#不确定性估计方法)
 
-| ID  | 年份  |      期刊/会议       |                                                        标题                                                         |    应用任务    |                                         PDF                                          |                      代码                       |
-|:---:|:----:|:--------------------:|:------------------------------------------------------------------------------------------------------------------:|:--------------:|:-----------------------------------------------------------------------------------:|:-----------------------------------------------:|
-|  1  | 2024 |       NeurIPS        | Hyper-opinion evidential deep learning for out-of-distribution detection                                            |    证据收集    | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.neurips.cc/paper_files/paper/2024/file/99d4ceebdf75b64e8ed608a245b63416-Paper-Conference.pdf) | - |
-|  2  | 2023 |        ICML          | Uncertainty estimation by fisher information-based evidential deep learning                                        |    证据收集    | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.mlr.press/v202/deng23b/deng23b.pdf)                          | - |
-|  3  | 2023 |        ICML          | Learn to accumulate evidence from all training samples: theory and practice                                        |    证据收集    | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.mlr.press/v202/pandey23a/pandey23a.pdf)                     | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/pandeydeep9/EvidentialResearch2023) |
-|  4  | 2025 |        TPAMI         | Revisiting Essential and Nonessential Settings of Evidential Deep Learning                                          |    证据收集    | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11052867)               | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/MengyuanChen21/Re-EDL) |
-|  5  | 2023 |        AAAI          | Post-hoc uncertainty learning using a dirichlet meta-model                                                          |    证据收集    | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://ojs.aaai.org/index.php/AAAI/article/view/26167)                          | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/maohaos2/PosthocUQ)    |
-|  6  | 2023 |       SciRep         | Learning and predicting the unknown class using evidential deep learning                                            |    OOD检测     | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://www.nature.com/articles/s41598-023-40649-w.pdf)                          | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/naga0862/m-EDL)        |
-|  7  | 2020 |        AAAI          | Uncertainty-aware deep classifiers using generative models                                                          |    OOD检测     | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://ojs.aaai.org/index.php/AAAI/article/view/6015)                           | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://muratsensoy.github.io/gen.html)   |
-|  8  | 2024 |         PR           | EdVAE: Mitigating codebook collapse with evidential discrete variational autoencoders                                |    OOD检测     | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2310.05718)                                               | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/ituvisionlab/EdVAE)    |
-|  9  | 2022 |        arXiv         | TEDL: A two-stage evidential deep learning method for classification uncertainty quantification                     |   训练策略     | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2209.05522)                                               | - |
-| 10  | 2022 |       NeurIPS        | Hybrid-edl: Improving evidential deep learning for uncertainty quantification on imbalanced data                     |   训练策略     | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://openreview.net/pdf?id=Nr1RDmAx-Qm)                                      | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/XTxiatong/Hybrid-EDL.git) |
-| 11  | 2022 |        CVPR          | Multidimensional belief quantification for label-efficient meta-learning                                            |   训练策略     | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://openaccess.thecvf.com/content/CVPR2022/papers/Pandey_Multidimensional_Belief_Quantification_for_Label-Efficient_Meta-Learning_CVPR_2022_paper.pdf) | - |
-| 12  | 2019 |        arXiv         | Bayesian evidential deep learning with PAC regularization                                                            |   训练策略     | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/1906.00816)                                               | - |
+---
+
+## 证据获取机制
+
+### 复合类别的Dirichlet证据获取
+
+| ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
+|:---:|:---:|:---:|:---|:---:|:---:|
+|  1  | 2024 | arXiv | Hyper evidential deep learning to quantify composite classification uncertainty | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2404.10980) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/Hugo101/HyperEvidentialNN) |
+|  2  | 2024 | NeurIPS | Hyper-opinion evidential deep learning for out-of-distribution detection | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.neurips.cc/paper_files/paper/2024/file/99d4ceebdf75b64e8ed608a245b63416-Paper-Conference.pdf) | - |
+
+### 正则化Dirichlet证据
+
+| ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
+|:---:|:---:|:---:|:---|:---:|:---:|
+|  3  | 2023 | ICML | Learn to accumulate evidence from all training samples: theory and practice | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.mlr.press/v202/pandey23a/pandey23a.pdf) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/pandeydeep9/EvidentialResearch2023) |
+|  4  | 2024 | AAAI | Uncertainty regularized evidential regression | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://doi.org/10.1609/aaai.v38i15.29583) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/FlynnYe/UR-ERN?tab=readme-ov-file) |
+|  5  | 2024 | AAAI | The evidence contraction issue in deep evidential regression: Discussion and solution | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://ojs.aaai.org/index.php/AAAI/article/view/30172) | - |
+
+### 贝叶斯角下的证据获取
+
+| ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
+|:---:|:---:|:---:|:---|:---:|:---:|
+|  6  | 2023 | arXiv | Deep evidential learning for Bayesian quantile regression | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2308.10650) | - |
+|  7  | 2024 | DAC | Conformal inference meets evidential learning: Distribution-free uncertainty quantification with epistemic and aleatoric separability | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://dl.acm.org/doi/pdf/10.1145/3649329.3663512) | - |
+|  8  | 2024 | UAI | Beyond Dirichlet-based models: When Bayesian neural networks meet evidential deep learning | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://openreview.net/pdf?id=2Eh7gLpIyG) | - |
+
+### 自适应重加权证据
+
+| ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
+|:---:|:---:|:---:|:---|:---:|:---:|
+|  9  | 2023 | ICML | Uncertainty estimation by Fisher information-based evidential deep learning | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.mlr.press/v202/deng23b/deng23b.pdf) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/danruod/IEDL) |
+
+---
+
+## 训练与推理策略
+
+### 无标签训练
+
+| ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
+|:---:|:---:|:---:|:---|:---:|:---:|
+| 10  | 2024 | IEEE BIBM | Mutual evidential deep learning for semi-supervised medical image segmentation | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://ieeexplore.ieee.org/abstract/document/10822008) | - |
+| 11  | 2023 | arXiv | Adaptive negative evidential deep learning for open-set semi-supervised learning | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2303.12091) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/yuyang16101066/anedl) |
+
+### 类别不平衡的训练
+
+| ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
+|:---:|:---:|:---:|:---|:---:|:---:|
+| 12  | 2022 | NeurIPS | Hybrid-EDL: Improving evidential deep learning for uncertainty quantification on imbalanced data | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://openreview.net/pdf?id=Nr1RDmAx-Qm) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/XTxiatong/Hybrid-EDL.git) |
+| 13  | 2024 | IEEE JBHI | Uncertainty-aware health diagnostics via class-balanced evidential deep learning | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://ieeexplore.ieee.org/abstract/document/10423104) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/XTxiatong/Class-balanced-EDL.git) |
+
+### 元学习的训练
+
+| ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
+|:---:|:---:|:---:|:---|:---:|:---:|
+| 14  | 2025 | Expert Syst. Appl. | Meta transfer evidence deep learning for trustworthy few-shot classification | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://www.sciencedirect.com/science/article/pii/S0957417424022383) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/ljatynu/MetaTEDL) |
+| 15  | 2025 | arXiv | Bi-level meta-policy control for dynamic uncertainty calibration in evidential deep learning | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2510.08938) | - |
+
+### 分布外样本检测
+
+| ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
+|:---:|:---:|:---:|:---|:---:|:---:|
+| 16  | 2025 | Expert Syst. Appl. | CEDL+: Exploiting evidential deep learning for continual out-of-distribution detection | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://www.sciencedirect.com/science/article/pii/S095741742501396X) | - |
+| 17  | 2025 | arXiv | Quantifying adversarial uncertainty in evidential deep learning using conflict resolution | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2506.05937) | - |
+| 18  | 2024 | arXiv | Uncertainty Estimation by Density Aware Evidential Deep Learning | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2409.08754) | - |
+| 19  | 2020 | NeurIPS | Posterior network: Uncertainty estimation without OOD samples via density-based pseudo-counts | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.neurips.cc/paper_files/paper/2020/file/0eac690d7059a8de4b48e90f14510391-Paper.pdf) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/sharpenb/Posterior-Network) |
+
+---
+
+## 不确定性建模与估计方法
+
+### 不确定性估计方法
+
+| ID  | 年份 | 期刊/会议 | 标题 | PDF | 代码 |
+|:---:|:---:|:---:|:---|:---:|:---:|
+| 20  | 2016 | ICML | Dropout as a Bayesian approximation: Representing model uncertainty in deep learning | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.mlr.press/v48/gal16.pdf) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/LeaBresson/Dropout-as-a-Bayesian-Approximation) |
+| 21  | 2018 | ICLR | A scalable Laplace approximation for neural networks | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://openreview.net/pdf?id=Skdvd2xAZ) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/ImperialCollegeLondon/csml-reading-group/issues/7) |
+| 22  | 2021 | JASA | Stochastic gradient Markov chain Monte Carlo | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://www.tandfonline.com/doi/pdf/10.1080/01621459.2020.1847120) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/chris-nemeth/sgmcmc-review-paper) |
+| 23  | 2017 | NeurIPS | Simple and scalable predictive uncertainty estimation using deep ensembles | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.neurips.cc/paper_files/paper/2017/file/9ef2ed4b7fd2c810847ffa5fa85bce38-Paper.pdf) | - |
+| 24  | 2018 | NeurIPS | Evidential deep learning to quantify classification uncertainty | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.neurips.cc/paper/2018/file/a981f2b708044d6fb4a71a1463242520-Paper.pdf) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/dougbrion/pytorch-classification-uncertainty) |
+| 25  | 2018 | NeurIPS | Predictive uncertainty estimation via prior networks | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://proceedings.neurips.cc/paper/2018/file/3ea2db50e62ceefceaf70a9d9a56a6f4-Paper.pdf) | [![GitHub](https://img.shields.io/badge/Code-GitHub-blue?style=plastic)](https://github.com/KaosEngineer/DirichletPriorNetworks) |
+| 26  | 2023 | AAAI | The unreasonable effectiveness of deep evidential regression | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://ojs.aaai.org/index.php/AAAI/article/view/26096) | - |
+| 27  | 2024 | ICML | Is epistemic uncertainty faithfully represented by evidential deep learning methods? | [![PDF](https://img.shields.io/badge/PDF-View-red?style=plastic)](https://arxiv.org/pdf/2402.09056) | - |
 
 
 
